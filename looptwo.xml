@@ -25,12 +25,17 @@
                     </value>
                     <next>
                       <block type="led_select" id="9" inline="true">
-                        <field name="ACTION">OFF</field>
+                        <field name="ACTION">ON</field>
                         <value name="LED">
                           <block type="math_number" id="10">
                             <field name="NUM">1</field>
                           </block>
                         </value>
+                        <next>
+                          <block type="multimedia_playwav" id="64">
+                            <field name="WAV">_SndTest.w</field>
+                          </block>
+                        </next>
                       </block>
                     </next>
                   </block>
