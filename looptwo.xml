@@ -10,7 +10,7 @@
         </value>
         <statement name="DO">
           <block type="controls_if" id="4" inline="false">
-            <mutation elseif="3" else="1"></mutation>
+            <mutation elseif="2" else="1"></mutation>
             <value name="IF0">
               <block type="logic_compare" id="5" inline="true">
                 <field name="OP">LT</field>
@@ -63,17 +63,7 @@
                   </block>
                 </value>
                 <next>
-                  <block type="movement_left" id="16">
-                    <next>
-                      <block type="robot_delay" id="40" inline="true">
-                        <value name="DELAY">
-                          <block type="math_number" id="41">
-                            <field name="NUM">200</field>
-                          </block>
-                        </value>
-                      </block>
-                    </next>
-                  </block>
+                  <block type="movement_left" id="16"></block>
                 </next>
               </block>
             </statement>
@@ -171,6 +161,9 @@
                 </next>
               </block>
             </statement>
+            <statement name="ELSE">
+              <block type="movement_forward" id="40"></block>
+            </statement>
             <next>
               <block type="robot_delay" id="36" inline="true">
                 <value name="DELAY">
@@ -188,5 +181,4 @@
       </block>
     </next>
   </block>
-  <block type="movement_forward" id="39" x="203" y="409"></block>
 </xml>
