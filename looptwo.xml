@@ -157,9 +157,6 @@
                             <field name="NUM">200</field>
                           </block>
                         </value>
-                        <next>
-                          <block type="movement_stop" id="38"></block>
-                        </next>
                       </block>
                     </next>
                   </block>
@@ -170,5 +167,8 @@
         </statement>
       </block>
     </statement>
+    <next>
+      <block type="movement_stop" id="38"></block>
+    </next>
   </block>
 </xml>
