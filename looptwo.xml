@@ -69,10 +69,15 @@
             </statement>
             <value name="IF2">
               <block type="logic_compare" id="58" inline="true">
-                <field name="OP">EQ</field>
+                <field name="OP">LT</field>
                 <value name="A">
                   <block type="sensor_object" id="65">
                     <field name="OBJECT">LEFTSIDE</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="78">
+                    <field name="NUM">80</field>
                   </block>
                 </value>
               </block>
