@@ -2,7 +2,7 @@
   <block type="controls_repeat" id="37" inline="true" x="242" y="-5">
     <value name="TIMES">
       <block type="math_number" id="44">
-        <field name="NUM">10</field>
+        <field name="NUM">4</field>
       </block>
     </value>
     <statement name="DO">
@@ -15,13 +15,26 @@
               </block>
             </value>
             <next>
-              <block type="led_select" id="72" inline="true">
-                <field name="ACTION">FLASH</field>
-                <value name="LED">
-                  <block type="math_number" id="79">
-                    <field name="NUM">3</field>
+              <block type="movement_left" id="99">
+                <next>
+                  <block type="robot_delay" id="100" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="101">
+                        <field name="NUM">1500</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="led_select" id="72" inline="true">
+                        <field name="ACTION">FLASH</field>
+                        <value name="LED">
+                          <block type="math_number" id="79">
+                            <field name="NUM">3</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
                   </block>
-                </value>
+                </next>
               </block>
             </next>
           </block>
